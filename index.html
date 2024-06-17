@@ -1,76 +1,149 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sala de Estar</title>
     <style>
-        * {
-            /* * é utilizado para todos os elementos */
-            margin: 0;
-            /* margem esterna */
-            padding: 0;
-            /* margem interna */
-            box-sizing: border-box;
-            /* incluir o preenchimento das bordas */
-        }
-
         body {
-            /* elementos flexível em um container */
-            display: flex;
-            margin: 3px;
-            flex-wrap: wrap;
-            flex: 1 1 100vw;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
         }
-
         header {
-            display: flex;
-            margin: 3px;
-            background-color: rgb(110, 173, 224);
-            flex: 1 1 100vw;
-            height: 100px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
         }
-
         nav {
-            display: flex;
-            margin: 3px;
-            background-color: rgb(114, 140, 255);
-            flex: 1 1 200px;
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
         }
-
-        main {
-            display: flex;
-            margin: 3px;
-            background-color: rgba(131, 250, 157, 0.795);
-            height: calc(100vh - 224px);
-            flex: 20 1 500px;
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
         }
-
-        aside {
-            display: flex;
-            margin: 3px;
-            background-color: rgba(116, 220, 238, 0.904);
-            flex: 1 1 200px;
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
         }
-
-        footer {
-            display: flex;
-            margin: 3px;
-            background-color: rgba(255, 107, 107, 0.822);
-            height: 100px;
-            flex: 1 1 100vw;
+        .main {
+            float: left;
+            width: 70%;
+        }
+        .sidebar {
+            float: left;
+            width: 30%;
+            background: #f0f0f0;
+            padding: 10px;
+        }
+        .members {
+            clear: both;
+            padding: 20px;
+            text-align: center;
+        }
+        .member {
+            display: inline-block;
+            width: 20%;
+            margin: 10px;
+            text-align: center;
+            vertical-align: top;
+        }
+        .member img {
+            width: 80%;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .member h3 {
+            margin: 5px 0;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
-
 <body>
-    <header> Cabeçalho </header>
-    <nav> Menu </nav>
-    <main> Principal </main>
-    <aside> Relacionado ao Principal </aside>
-    <footer> Rodapé </footer>
+    <header>
+        <h1>Esquilos e as Esquiletes</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Sobre</a>
+        <a href="#">Serviços</a>
+        <a href="#">Contato</a>
+    </nav>
+    <div class="container">
+        <section class="main">
+            <h2>Bem vindo ao site da Sala</h2>
+            <p>Aqui iremos contar um pouco sobre as características e personalidade dos membros do nosso grupo.</p>
+            <p> Projeto da aula de programação com o professor Arisberto.</p>
+        </section>
+        <aside class="sidebar">
+            <h3>Informações</h3>
+            <p>Colegio Estadual Professora Dirce Celestino do Amaral</p>
+            <p>Data: 17/06/2024</p>
+            <p>2º B Nem</p>
+            <p>Grupo da sala: Esquilos e as Esquiletes</p>
+        </aside>
+        <div class="members">
+            <h2>Nossos Membros</h2>
+            <div class="member">
+                <img src="https://via.placeholder.com/150" alt="Membro 1">
+                <h3>Iury Alexandre</h3>
+                <p>Idade: 16 anos</p>
+                <p>Cor favorita: Vermelho</p>
+                <p>Hobbies: Esportes e Jogos digitais</p>
+                <p>Frase representativa: "Sonhar e nunca desistir"</p>
+            </div>
+            <div class="member">
+                <img src="https://via.placeholder.com/150" alt="Membro 2">
+                <h3>Vinicius da Silva</h3>
+                <p>Idade: 15 anos</p>
+                <p>Cor favorita: Verde</p>
+                <p>Hobbies: Esportes e Jogos digitais</p>
+                <p>Frase representativa: "Você só perde quando desiste" </p>
+            </div>
+            <div class="member">
+                <img src="https://via.placeholder.com/150" alt="Membro 3">
+                <h3>Emilly Luize</h3>
+                <p>Idade: 17 anos</p>
+                <p>Cor favorita: Rosa e Cherry</p>
+                <p>Hobbies: Autocuidado e música.</p>
+                <p>Frase representativa: "Só se vive uma vez"</p>
+            </div>
+            <div class="member">
+                <img src="https://via.placeholder.com/150" alt="Membro 4">
+                <h3>Emelly Golçalves</h3>
+                <p>Idade: 16 anos</p>
+                <p>Cor favorita: Azul</p>
+                <p>Hobbies: Escutar música, ler e dormir</p>
+                <p>Frase representativa: "Real"</p>
+            </div>
+            <div class="member">
+                <img src="https://via.placeholder.com/150" alt="Membro 5">
+                <h3>Sofia Oliveira</h3>
+                <p>Idade: 16 anos</p>
+                <p>Cor favorita: Azul e Roxo</p>
+                <p>Hobbies: Música, autocuidado, escrever, correr, assistir filmes e brincar com minha cachorrinha</p>
+                <p>Frase representativa: "Oh, because i'm so that girl"</p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; Turma 2º Ano B NEM 2024</p>
+    </footer>
 </body>
-
 </html>
-
